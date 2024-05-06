@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"image/color"
 	"log"
 
@@ -15,6 +14,8 @@ type Game struct {
 
 const gravity_y float32 = 1
 
+// this is delta time and i hope engine renders at 60fps
+// TODO calculate this later
 const dt float32 = 1.0 / 60
 
 type CircleObject struct {
@@ -38,7 +39,6 @@ func (object *CircleObject) Update() {
 	object.pos_x = object.pos_x + vel_x + object.acceleration_x*dt*dt
 	object.pos_y = object.pos_y + vel_y + object.acceleration_y*dt*dt
 
-	fmt.Println(dt)
 	object.acceleration_x = 0
 	object.acceleration_y = 0
 }
@@ -78,7 +78,7 @@ func (g *Game) Draw(screen *ebiten.Image) {
 
 	}
 }
-
+// TODO should look what is this
 func (g *Game) Layout(outsideWidth, outsideHeight int) (screenWidth, screenHeight int) {
 	return 320, 240
 }
