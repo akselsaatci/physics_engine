@@ -35,7 +35,7 @@ func (object *CircleObject) Update() {
 	object.acceleration_x = 0
 	object.acceleration_y = 0
 }
-func (object *CircleObject) accelerate(acc_x, acc_y float32) {
+func (object *CircleObject) Accelerate(acc_x, acc_y float32) {
 	object.acceleration_x = acc_x
 	object.acceleration_y = acc_y
 

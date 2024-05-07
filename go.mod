@@ -1,4 +1,4 @@
-module github.com/akselsaatci/physics_eng_golang
+module github.com/akselsaatci/physics_engine
 
 go 1.21.5
 
