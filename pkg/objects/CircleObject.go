@@ -1,4 +1,4 @@
-package CircleObject
+package objects 
 
 import (
 	"image/color"

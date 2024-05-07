@@ -4,7 +4,7 @@ import (
 	"image/color"
 	"log"
 
-    "github.com/akselsaatci/pkg/objects/CircleObject"
+    "github.com/akselsaatci/physics_engine/pkg/objects/CircleObject"
 	"github.com/hajimehoshi/ebiten/v2"
 )
 
